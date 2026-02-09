@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Intro to CSS Text and Spans</title>
+
+    <style type="text/CSS">
+        /* universal selector - the first css rule because the intent is to reset and then 
+        overwrite with more specific styles and selectors further down */
+        /* * {
+            /* border: 1px solid blue;
+            margin: 0;
+            padding: 0; 
+        } */ 
+         /* tag selector applies to all p tags on the page */
+         p {
+            margin-top: 1rem; 
+            margin-bottom: 0.5rem; 
+            color: #f50; 
+            /* above is short hand for #ff5500; */
+            font-family: 'Courier New', Courier, monospace; 
+         }
+
+         a {
+            color: cornflowerblue; 
+            text-decoration: none;
+            font-weight: bold; 
+         }
+
+         .silly_text {
+            font-family: fantasy;
+            font-size: 1.5rem; 
+         }
+
+         #important_stuff {
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucinda Sans Serif';
+         }
+    </style>
+
+  </head>
+  <body>
+    <p id="important_stuff"> This is important. it gets an ID. </p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate lobortis eleifend. 
+    Nam odio ligula, ornare vel ipsum ut, lacinia condimentum diam. 
+    Sed lacinia sapien tortor. <a href="silly_text">Sed maximus ut risus id finibus. </a>
+    In hac habitasse platea dictumst. Curabitur accumsan vitae ex in aliquet. 
+    Curabitur purus eros, tincidunt nec auctor in, iaculis eu dui. Etiam dapibus 
+    ante dolor, eu placerat odio consectetur sit amet. Nulla sed ullamcorper orci.
+     Pellentesque nec libero ullamcorper, commodo turpis eu, maximus ex. </p>
+
+<p> Sed aliquam massa eros, vitae auctor nunc sollicitudin fermentum. Orci varius 
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. P
+hasellus metus lorem, luctus ac dui quis, vulputate eleifend metus. Nam vel le
+ctus nec arcu placerat lobortis. In egestas sem non sollicitudin sollicitudin. Ut 
+gestas auctor felis in lobortis. Duis sit amet felis neque. Nam aliquet est mi, vel 
+aliquet sapien dictum et. Ut mollis sapien id velit rhoncus ultricies. In luctus diam 
+ut fringilla ornare. Maecenas fermentum finibus justo, nec pellentesque odio vulputate ut.
+</p>
+
+
+   <p> Fusce hendrerit non nunc dictum tempor. N
+am enim dui, commodo non justo sit amet, conval
+lis cursus mauris. Morbi ultrices ultricies nulla. P
+roin eget mattis lorem. Nunc tempor, metus sit amet
+ mollis tristique, felis lacus sodales sapien, eget 
+ sagittis felis nisi at arcu. Nulla faucibus non magna 
+ eu pulvinar. Duis eleifend justo sit amet ornare semper. 
+ Morbi eget arcu sit amet odio fringilla ultrices. Donec at 
+ sem nec eros viverra viverra. Maecenas tincidunt, nibh porttitor 
+ venenatis egestas, ligula nulla consequat nisl, vel pulvinar leo nibh id turpis. 
+ Suspendisse eu quam ut sem faucibus sagittis. Donec tristique velit eget tellus 
+ ultricies, quis egestas ante accumsan. Curabitur ut tellus euismod, tristique dolor vel,
+  scelerisque felis. Duis euismod, enim vel vestibulum eleifend, sapien dui luctus tortor,
+   eu porta urna urna sed felis. Quisque in ligula sagittis orci imperdiet lacinia elementum c 
+   lectus. Aliquam maximus nunc eget lacus accumsan mollis.</p>
+
+
+</p>
+  </body>
+</html>
