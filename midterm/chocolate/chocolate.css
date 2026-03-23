@@ -1,0 +1,172 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Garamond, sans-serif; 
+    background-color: pink;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #d9f9ff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: pink;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #c9f6ff;
+    font-size: 25px;
+    color: white;
+    
+    transition: 0.5s;
+}
+
+/* Main layout */
+.row-one {
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.title-pic {
+    flex: 0 0 40%; /* 40% of row */
+    display: flex;
+    flex-direction: column; /* stack title + image */
+}
+
+.title {
+    font-size: 40px;
+    background-color: pink;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+.pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: pink;
+}
+
+.ingredients {
+    background-color: pink;
+    color: white;
+    flex: 0 0 60%;
+    padding: 40px;
+}
+
+.all-ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.item {
+    width: 110px;
+    text-align: center;
+}
+
+.item img {
+    width: 70px;
+    height: auto;
+}
+
+.item img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.item p {
+    font-size: 14px;
+    margin-top: 6px;
+    color: white;
+}
+
+.ingredients h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: white;
+    
+}
+
+.instructions {
+    width: 100%;
+    padding: 1rem;
+    background-color: pink;
+}
+
+.instructions p {
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  
+    border: 3px solid white;
+}
+
+.instructions h2 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .row-one {
+        flex-direction: column;
+    }
+    .title-pic, .ingredients {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .item {
+        width: 200px;
+    }
+
+    .item img {
+        width: 170px;
+    }
+
+    .item p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .all-ingredients {
+        gap: 100px;
+    }
+}
