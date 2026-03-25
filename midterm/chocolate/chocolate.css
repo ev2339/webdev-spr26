@@ -9,7 +9,7 @@ body {
     background-color: pink;
 }
 
-/* Navbar */
+
 .navbar {
     overflow: hidden;
     background-color: #d9f9ff;
@@ -44,9 +44,9 @@ body {
 }
 
 .title-pic {
-    flex: 0 0 40%; /* 40% of row */
+    flex: 0 0 40%; 
     display: flex;
-    flex-direction: column; /* stack title + image */
+    flex-direction: column; 
 }
 
 .title {
@@ -134,7 +134,6 @@ body {
     text-align: center;
 }
 
-/* Responsive */
 @media screen and (max-width: 700px) {
     .row-one {
         flex-direction: column;

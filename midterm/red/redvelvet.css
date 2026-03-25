@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +9,6 @@ body {
     background-color: pink;
 }
 
-/* Navbar */
 .navbar {
     overflow: hidden;
     background-color: #d9f9ff;
@@ -36,7 +35,7 @@ body {
     transition: 0.5s;
 }
 
-/* Main layout */
+
 .row-one {
     display: flex;
     width: 100%;
@@ -44,9 +43,9 @@ body {
 }
 
 .title-pic {
-    flex: 0 0 40%; /* 40% of row */
+    flex: 0 0 40%; 
     display: flex;
-    flex-direction: column; /* stack title + image */
+    flex-direction: column; 
 }
 
 .title {

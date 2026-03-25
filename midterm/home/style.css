@@ -113,7 +113,8 @@ body {
     flex: 1 0 100%;
     display: flex;              
     justify-content: center;    
-    align-items: center;       
+    align-items: center;     
+    scroll-snap-align: center;  
 }
 
 .slider::-webkit-scrollbar {
