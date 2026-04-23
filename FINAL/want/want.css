@@ -5,14 +5,10 @@ body {
   color: #ffd4ff;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-/* TITLE */
 .title {
   font-size: 50px;
   color: #ffd4ff;
 }
-
-/* CARDS */
 .card {
   border: 8px solid #ffd4ff;
   border-radius: 12px;
@@ -25,15 +21,12 @@ body {
   background-color: transparent;
   color: #ffd4ff;
 }
-
 .card-header {
   background-color: #ffd4ff;
   color: #ec1763;
   font-weight: bold;
   font-size: 20px;
 }
-
-/* BUTTON */
 button {
   background-color: #ffd4ff;
   color: #ec1763;
@@ -48,8 +41,6 @@ button:hover {
   transform: scale(1.05);
   background-color: #ceeaee;
 }
-
-/* LIST */
 .list-group-item {
   background-color: transparent;
   color: #ffd4ff;
@@ -66,20 +57,14 @@ button:hover {
   transition: 0.5s ease;
   cursor: pointer;
 }
-
-/* POEM TEXT */
 .card-body p:hover {
   font-size: 20px;
   transition: 0.5s ease;
 }
-
-/* COMMENTS */
 .scroll-box {
   max-height: 200px;
   overflow-y: auto;
 }
-
-/* LIGHT MODE */
 body.light-mode {
   background-color: #cdd629 !important;
   color: #ec1763;

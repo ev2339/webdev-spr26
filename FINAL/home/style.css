@@ -159,10 +159,6 @@ body.light-mode .flash__face--back {
   transform: rotateY(180deg);
   box-shadow: 6px 6px 0px #f37826;
 }
-
-
-
-/* MOBILE */
 @media (max-width: 768px) {
   .flash-grid {
     grid-template-columns: repeat(2, 1fr);
