@@ -1,0 +1,116 @@
+body {
+
+  background-color: #ec1763;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffd4ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* TITLE */
+.title {
+  font-size: 50px;
+  color: #ffd4ff;
+}
+
+/* CARDS */
+.card {
+  border: 8px solid #ffd4ff;
+  border-radius: 12px;
+  background-color: transparent;
+  box-shadow: 8px 8px 0px #f37826;
+  margin-bottom: 40px;
+}
+
+.card-body {
+  background-color: transparent;
+  color: #ffd4ff;
+}
+
+.card-header {
+  background-color: #ffd4ff;
+  color: #ec1763;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* BUTTON */
+button {
+  background-color: #ffd4ff;
+  color: #ec1763;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #ceeaee;
+}
+
+/* LIST */
+.list-group-item {
+  background-color: transparent;
+  color: #ffd4ff;
+  border: none;
+}
+
+.list-group-item a {
+  color: #ffd4ff;
+  text-decoration: none;
+}
+
+.list-group-item:hover {
+  font-size: 20px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+/* POEM TEXT */
+.card-body p:hover {
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+
+/* COMMENTS */
+.scroll-box {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+  background-color: #cdd629 !important;
+  color: #ec1763;
+}
+
+body.light-mode .card {
+  border-color: #ec1763;
+  background-color: #ffffff;
+}
+
+body.light-mode .card-header {
+  background-color: #5568af;
+  color: #cdd629;
+}
+
+body.light-mode .card-body {
+  color: #ec1763;
+}
+
+body.light-mode .title {
+  color: #ec1763;
+}
+
+body.light-mode .list-group-item {
+  color: #ec1763;
+}
+
+body.light-mode .list-group-item a {
+  color: #ec1763;
+}
+
+body.light-mode .card-body p {
+  color: #ec1763;
+}

@@ -1,0 +1,129 @@
+body {
+  background-color: #ec1763;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffd4ff;
+}
+
+.card {
+  border: 8px solid #ffd4ff;
+  border-radius: 12px;
+  background-color: transparent;
+  box-shadow: 8px 8px 0px #f37826;
+  margin-bottom: 40px;
+}
+
+.card-body {
+  background-color: transparent;
+  color: #ffd4ff;
+}
+
+.card-header {
+  background-color: #ffd4ff;
+  color: #ec1763;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title {
+  color: #ffd4ff;
+  font-size: 50px;
+}
+
+h2 {
+  color: #ffd4ff;
+}
+
+/* SIDEBAR */
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  color: #ffd4ff;
+}
+
+.list-group-item a {
+  color: #ffd4ff;
+  text-decoration: none;
+}
+
+.list-group-item:hover {
+  font-size: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+button {
+  background-color: #ffd4ff;
+  color: #ec1763;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  background-color: #ceeaee;
+}
+
+.app {
+  text-align: center;
+}
+
+#answers button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffd4ff;
+  color: #ec1763;
+  font-weight: bold;
+}
+
+#answers button:hover {
+  background-color: #ceeaee;
+  color: #fff;
+}
+#next-btn {
+  margin-top: 20px;
+}
+textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.commentText {
+  color: white;
+}
+body.light-mode {
+  background-color: #cdd629 !important;
+  color: #ec1763;
+}
+
+body.light-mode .card {
+  border-color: #ec1763;
+}
+
+body.light-mode .card-header {
+  background-color: #5568af;
+  color: #cdd629;
+}
+
+body.light-mode .card-body {
+  color: #ec1763;
+}
+
+body.light-mode .list-group-item {
+  color: #ec1763;
+}
+
+body.light-mode .list-group-item a {
+  color: #ec1763;
+}
+
+body.light-mode button {
+  background-color: #5568af;
+  color: #cdd629;
+}

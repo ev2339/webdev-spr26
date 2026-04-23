@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>would we be friends?</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../quiz/quiz.css">
+</head>
+
+<body>
+
+  <button onclick="toggleMode()">color button &lt;3</button>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12 col-md-3">
+
+        <div class="card">
+          <div class="card-header">pages!</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="../reviews/reviews.html">reviews</a>
+            </li>
+            <li class="list-group-item">
+                <a href="../home/index.html">home</a>
+  
+            </li>
+
+            <li class="list-group-item">
+              <a href="../want/want.html">want to read / watch</a>
+            </li>
+
+            <li class="list-group-item">
+              <a href="../poems/poems.html">poems</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="card mt-3">
+          <div class="card-header">results?</div>
+
+          <div class="card-body">
+            <textarea id="commentInput" class="form-control mb-2" rows="3" placeholder="..."></textarea>
+            <button onclick="addComment()">post</button>
+            <div id="commentsSection" class="mt-3"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="col-12 col-md-9">
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <marquee behavior="alternate" class="title">would we be friends?</marquee>
+          </div>
+        </div>
+
+        <!-- QUIZ CARD -->
+        <div class="card mb-4">
+          <div class="card-header">       </div>
+
+          <div class="card-body app">
+            <h2 id="question">question here</h2>
+
+            <div id="answers"></div>
+
+            <button id="next-btn">next</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("light-mode");
+    }
+
+    function addComment() {
+      const input = document.getElementById("commentInput");
+      const commentText = input.value;
+
+      if (commentText.trim() === "") return;
+
+      const commentDiv = document.createElement("div");
+      commentDiv.classList.add("card", "p-2", "mb-2");
+      commentDiv.textContent = commentText;
+
+      document.getElementById("commentsSection").appendChild(commentDiv);
+
+      input.value = "";
+    }
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

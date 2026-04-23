@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>esha's world</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button onclick="toggleMode()">color button &lt;3</button>
+
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-12 col-md-3">
+
+      <div class="card">
+        <div class="card-header">thingies!</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="../reviews/reviews.html">reviews</a></li>
+          <li class="list-group-item"><a href="../poems/poems.html">poems</a></li>
+          <li class="list-group-item"><a href="../want/want.html">want to read / watch</a></li>
+          <li class="list-group-item"><a href="../quiz/quiz.html">friends?</a></li>
+        </ul>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-header">comments</div>
+        <div class="card-body">
+          <textarea id="commentInput" class="form-control mb-2" rows="3" placeholder="..."></textarea>
+          <button class="button" onclick="addComment()">post</button>
+          <div id="commentsSection" class="mt-3"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-12 col-md-9">
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <marquee class="title">welcome to esha's world!</marquee>
+
+          <p> hi!!!! I made this blog to post some reviews, thoughts, and to share some poems I like! leave comments on 
+            what you think and give me recommendations on what to read and watch next!!! ENJOY :)
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">tap to see my favorite ...</div>
+
+        <div class="card-body">
+
+          <div class="flash-grid">
+            <div class="flash">
+              <div class="flash__inner" onclick="this.classList.toggle('is-flipped')">
+                <div class="flash__face flash__face--front"><h2>color</h2></div>
+                <div class="flash__face flash__face--back"><h3>pink!</h3></div>
+              </div>
+            </div>
+
+            <div class="flash">
+              <div class="flash__inner" onclick="this.classList.toggle('is-flipped')">
+                <div class="flash__face flash__face--front"><h2>food</h2></div>
+                <div class="flash__face flash__face--back"><h3>bagel!</h3></div>
+              </div>
+            </div>
+
+            <div class="flash">
+              <div class="flash__inner" onclick="this.classList.toggle('is-flipped')">
+                <div class="flash__face flash__face--front"><h2>animal</h2></div>
+                <div class="flash__face flash__face--back"><h3>guinea pigs!</h3></div>
+              </div>
+            </div>
+
+            <div class="flash">
+              <div class="flash__inner" onclick="this.classList.toggle('is-flipped')">
+                <div class="flash__face flash__face--front"><h2>activity</h2></div>
+                <div class="flash__face flash__face--back"><h3>reading in a park!</h3></div>
+              </div>
+            </div>
+
+            <div class="flash">
+              <div class="flash__inner" onclick="this.classList.toggle('is-flipped')">
+                <div class="flash__face flash__face--front"><h2>number!</h2></div>
+                <div class="flash__face flash__face--back"><h3>7!</h3></div>
+              </div>
+            </div>
+
+            <div class="flash">
+              <div class="flash__inner" onclick="this.classList.toggle('is-flipped')">
+                <div class="flash__face flash__face--front"><h2>season</h2></div>
+                <div class="flash__face flash__face--back"><h3>spring!</h3></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("light-mode");
+}
+
+function addComment() {
+  const input = document.getElementById("commentInput");
+  const commentText = input.value;
+
+  if (commentText.trim() === "") return;
+
+  const commentDiv = document.createElement("div");
+  commentDiv.classList.add("card", "p-2", "mb-2");
+  commentDiv.textContent = commentText;
+
+  document.getElementById("commentsSection").appendChild(commentDiv);
+  input.value = "";
+}
+</script>
+
+</body>
+</html>
