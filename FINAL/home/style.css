@@ -59,12 +59,12 @@ a {
   -webkit-text-stroke-color: #ceeaee;
 }
 
-.list-group-item {
+.item {
   background-color: transparent;
   color: #ec1763;
 }
 
-.list-group-item:hover {
+.item:hover {
   font-size: 18px;
   transition: 0.3s;
   cursor: pointer;
